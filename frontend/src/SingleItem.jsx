@@ -1,9 +1,6 @@
-import { useMutation, useQueryClient } from '@tanstack/react-query';
-import customFetch from './utils';
 import { useEditTask, useDeleteTask } from './reactQueryCustomHooks';
 
 const SingleItem = ({ item }) => {
-  const queryClient = useQueryClient();
   const { editTask } = useEditTask();
   const { deleteTask } = useDeleteTask();
 
